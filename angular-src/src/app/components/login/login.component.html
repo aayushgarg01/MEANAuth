@@ -1,0 +1,21 @@
+<h2 class="page-header">Login</h2>
+
+<!-- We are calling a fucntion defined in login.component onLoginSubmit() on submit event -->
+<form (submit)="onLoginSubmit()">
+  <div class="form-group">
+    <label>Username</label>
+
+    <!-- We also need to bind the data from screen to the method onLoginSubmit()-->
+    <!-- ngModel's name represents how it can be used in method and it should match with text box vaiable name-->
+    <input type="text" class="form-control" [(ngModel)]="username" name="username">
+  </div>
+
+
+  <div class="form-group">
+    <label>Password</label>
+
+    <!-- We also need to bind the data from screen to the method onLoginSubmit()-->
+    <input type="password" class="form-control" [(ngModel)]="password" name="password">
+  </div>
+  <input type="submit" class="btn btn-primary" value="Login">
+</form>

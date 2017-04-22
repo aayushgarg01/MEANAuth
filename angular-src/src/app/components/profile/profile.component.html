@@ -1,0 +1,9 @@
+<!-- This statement is using local variable user of the Class ProfileComponent -->
+<!-- It is checking if user has some data then it is displaying all content which came from API  -->
+<div *ngIf="user">
+  <h2 class="page-header">{{user.name}}</h2>
+  <ul class="list-group">
+    <li class="list-group-item">Username: {{user.username}}</li>
+    <li class="list-group-item">Email: {{user.email}}</li>
+  </ul>
+</div>

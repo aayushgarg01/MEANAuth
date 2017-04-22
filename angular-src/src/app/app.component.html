@@ -1,0 +1,11 @@
+<!-- -->
+<!-- We want Navigation bar/ component on each page so it will stay here -->
+<app-navbar></app-navbar>
+<!-- -->
+<div class="container">
+  <flash-messages></flash-messages>
+
+  <!-- Router-outlet tag works with RouterModule.forRoot(appRoutes)  -->
+  <!-- It is capable to work which URL is requested and it calls that Component-->
+  <router-outlet></router-outlet>
+</div>
